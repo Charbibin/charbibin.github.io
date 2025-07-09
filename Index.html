@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/hemsida-style.css">
+  <link rel="icon" type="image/x-icon" href="images/icons/favicon">
+  <!--icon link-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <title>Välkomna till Söt & Elegant</title>
+
+</head>
+<body>
+<div class="header"><h1>SÖT & ELEGANT</h1></div>
+
+<div class="sidemenu">
+<input type="checkbox" id="sidebar-toggler" style="display:none;">
+<label for="sidebar-toggler" class="sidebar-toggle-label">
+  <i class="fas fa-bars"></i>
+</label>
+<div class="sidebar-header-wrapper">
+  <div class="sidebar">
+    <aside class="aside-wrapper">
+      <ul>
+        <li><i class="fas fa-home"></i><span>Startsida</span></li>
+        <li><i class="fas fa-birthday-cake"></i><span>Alla produkter</span></li>
+        <li><i class="fas fa-dollar-sign"></i><span>Beställning</span></li>
+        <li><i class="fas fa-calendar"></i><span>Boka lokal</span></li>
+        <li><i class="fas fa-phone-square"></i><span>Kontakta</span></li>
+        <li><i class="fas fa-shopping-cart"></i><span>Din varukong</span></li>
+      </ul>
+    </aside>
+  </div>
+</div>
+</div>
+<!--sidebar for mobile end-->
+
+<!--navbar for desktop-->  
+	<div class="navbar">
+    <a class="active" href="#">Startsida</a>
+    <a href="#">Alla produkter</a>
+    <a href="#">Beställning</a>
+    <a href="#">Boka lokal</a>
+    <a href="#">Kontakta oss</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="text" class="searchinput" placeholder="Search..." name="search">
+        </form>
+      </div>
+  </div>
+
+
+<!--banner1-->
+<div class="banner1">
+  <div class="bannertop">  
+       <picture>
+          <!--small mobile phone-->
+          <source media="(max-width: 450px)" srcset="images/bannerA/450x300.png">
+          <!--IPad mini, IPad air-->
+          <source media="(max-width: 768px)" srcset="images/bannerA/768x300.png">
+          <!--other tablet-->
+          <source media="(max-width: 980px)" srcset="images/bannerA/980x300.png">
+          <!--small laptop-->
+          <source media="(max-width: 1200px)" srcset="images/bannerA/1200x300.png">
+          <!--laptop-->
+          <source media="(max-width: 1440px)" srcset="images/bannerA/1440x300.png">
+          <!--computer, laptop-->
+          <source media="(max-width: 1600px)" srcset="images/bannerA/1600x300.png">
+          <!--big computer, laptop-->
+          <source media="(min-width: 1920px)" srcset="images/bannerA/2048x300.png">
+          <source media="(max-width: 2304px)" srcset="images/bannerA/2304x300.png">
+          <img src="images/bannerA/2304x300.png" alt="An inmage of colorful macarons">
+      </picture>
+    <div class="tid1" style="color: white;">
+    <div class="top-centered">
+      <p><b>Öppettider</b></p><p style="font-size: 18px;">måndag-söndag 07.00-18.00</p></div>
+    </div>
+
+    <div class="adress1">
+    <div class="bottom-centered"><a href="https://maps.app.goo.gl/eRYmkvtq27RuxdGz7">
+      <b>Adress: Hammarby Fabriksväg 65,<br>120 30 Stockholm</b></a></div>
+</div>
+</div>
+
+<!--card column-->
+
+<div class="card-container">
+      <div class="card"> <!--card1-->
+          <h3 class="cardhead"><b>Beställning</b></h3> 
+          <p class="cardtext">Kolla in våra bakverk och kakor alltid nybakade och redo 
+            att göra din dag lite godare!<br>Beställ enkelt online och hämta upp när det passar dig</p>
+        <img class="card-img-bottom" src="images/cards/onlinebestallning.png" alt="A staff at a café">
+        <a href="#" class="buttonA">Beställa här</a>
+      </div>
+
+
+<!--card2-->
+<div class="card">
+    <h3 class="cardhead"><b>Boka lokal</b></h3> 
+    <p class="cardtext">Vill du ordna en fest, ett företagsmöte eller kanske något mittemellan? <br> Vår cafélokal rymmer upp till 50 personer. Mingel, möte eller möhippa? Vi fixar det!</p>
+  <img class="card-img-bottom" src="images/cards/hyralokal.png" alt="An image of a cafe">
+  <a href="#" class="buttonB">Boka nu</a>
+</div>
+
+<!--card3-->
+<div class="card">
+    <h3 class="cardhead"><b>Blog</b></h3> 
+    <p class="cardtext">Håll dig uppdaterad med det senaste från vårt café! <br> Här hittar du tips, evenemang och goda tårtrecept som du enkelt kan baka hemma.</p>
+  <img class="card-img-bottom" src="images/cards/blog.png" alt="An image of a bread">
+  <a href="#" class="buttonC">Läs mer</a>
+</div>
+</div>
+
+
+<!--newsletter-->
+<div class="subscription">
+<form action="action_page.php">
+  <div class="sub-container">
+    <h2 class="sub-head">Prenumerera på vårt nyhetsbrev</h2>
+    <p class="sub-text">Då får du tips, recept och nyheter direkt i din inkorg!</p>
+  </div>
+  <div class="sub-button">
+  <input type="text" class="sub-input" placeholder="Din e-post" name="letter">
+  <input class="sub-submit" type="submit" value="Prenumerera">
+  </div>
+</form>
+</div>
+
+<!--footer-->
+<footer>
+<div class="container">
+  <div class="column">
+  <ul>
+    <li><a href="#">Din beställning</a></li>
+    <li><a href="#">Kontakta oss</a></li>
+  </ul>
+  </div>  
+  <div class="column">
+  <ul>
+    <li><a href="#">Om oss</a></li>
+    <li><a href="#">Jobba hos oss</a></li>
+  </ul> 
+  </div>
+   <div class="column">
+  <ul>
+    <li><a href="#">Villor</a></li>
+    <li><a href="#">Integritetspolicy</a></li>
+  </ul>
+  </div>
+</div>
+</footer>
+
+<footer class="copyright">
+  <p class="ctext">&copy; Copyright 2025 Söt & Elegant</p>
+</footer>
+
+
+</body>
+</html>
+
