@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/hemsida-style.css">
-  <link rel="icon" type="image/x-icon" href="images/icons/favicon">
+  <link rel="stylesheet" href="css/index-style.css">
+  <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
   <!--icon link-->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 
@@ -12,6 +12,7 @@
 
 </head>
 <body>
+
 <div class="header"><h1>SÖT & ELEGANT</h1></div>
 
 <div class="sidemenu">
@@ -39,7 +40,7 @@
 <!--navbar for desktop-->  
 	<div class="navbar">
     <a class="active" href="#">Startsida</a>
-    <a href="#">Alla produkter</a>
+    <a href="allaprodukter.html">Alla produkter</a>
     <a href="#">Beställning</a>
     <a href="#">Boka lokal</a>
     <a href="#">Kontakta oss</a>
@@ -71,7 +72,7 @@
           <!--big computer, laptop-->
           <source media="(min-width: 1920px)" srcset="images/top-banner/2048x300.png">
           <source media="(max-width: 2304px)" srcset="images/top-banner/2304x300.png">
-          <img src="images/top-banner/2304x300.png" alt="An inmage of colorful macarons">
+          <img src="images/bannerA/2304x300.png" alt="An inmage of colorful macarons">
       </picture>
     <div class="tid1" style="color: white;">
     <div class="top-centered">
@@ -113,47 +114,58 @@
 </div>
 </div>
 
-
-<!--newsletter-->
-<div class="subscription">
-<form action="action_page.php">
-  <div class="sub-container">
-    <h2 class="sub-head">Prenumerera på vårt nyhetsbrev</h2>
-    <p class="sub-text">Då får du tips, recept och nyheter direkt i din inkorg!</p>
-  </div>
-  <div class="sub-button">
-  <input type="text" class="sub-input" placeholder="Din e-post" name="letter">
-  <input class="sub-submit" type="submit" value="Prenumerera">
-  </div>
-</form>
-</div>
-
 <!--footer-->
 <footer>
 <div class="container">
-  <div class="column">
-  <ul>
-    <li><a href="#">Din beställning</a></li>
-    <li><a href="#">Kontakta oss</a></li>
-  </ul>
-  </div>  
-  <div class="column">
-  <ul>
-    <li><a href="#">Om oss</a></li>
-    <li><a href="#">Jobba hos oss</a></li>
-  </ul> 
-  </div>
-   <div class="column">
-  <ul>
-    <li><a href="#">Villor</a></li>
-    <li><a href="#">Integritetspolicy</a></li>
-  </ul>
-  </div>
-</div>
-</footer>
+  <div class="row">
 
-<footer class="copyright">
-  <p class="ctext">&copy; Copyright 2025 Söt & Elegant</p>
+    <!--1st column-->
+    <div class="footer-col">
+      <h4>Om oss</h4>
+      <ul>
+        <li><a href="#">Vår historia</a></li>
+        <li><a href="#">Jobba hos oss</a></li>
+        <li><a href="#">Kontakta oss</a></li>
+      </ul>
+    </div>
+
+    <!--2nd column-->
+    <div class="footer-col">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="#">Villor</a></li>
+        <li><a href="#">Integritetspolicy</a></li>
+      </ul>
+    </div>
+
+  <!--3rd column-->
+    <div class="footer-col">
+      <h4>Kontakta oss</h4>
+      <ul>
+        <li>Hammarby Fabriksväg 65,<br>120 30 Stockholm<br><b>Tel:</b> 000 000 0000</li>
+      <h4 class="sub-h4">Öppettider</h4>
+        <li>Måndag-söndag 07.00-18.00</li>
+      </ul>
+    </div>
+
+    <!--4th column-->
+    <div class="footer-col">
+      <h4>Prenumerera på vårt nyhetsbrev</h4>
+      <p>Få tips, recept och nyheter direkt i din inkorg</p>
+      <div class="sub-footer">
+        <form action="">
+        <input type="text" placeholder="Din e-post" name="letter">
+        <input type="submit" value="Prenumerera">
+       </form>
+      </div>
+    </div>
+
+</div>
+</div>
+    <div class="row">
+      <div class="ctext">
+      <p>&copy; Copyright 2025 Söt & Elegant</p>
+    </div>
 </footer>
 
 
