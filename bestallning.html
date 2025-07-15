@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bestallning.css">
+  <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+  <!--icon link-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <title>Välkomna till Söt & Elegant</title>
+
+</head>
+<body>
+<div class="header"><h1>SÖT & ELEGANT</h1></div>
+
+<!--sidebar for mobile-->
+<div class="sidemenu">
+<input type="checkbox" id="sidebar-toggler" style="display:none;">
+<label for="sidebar-toggler" class="sidebar-toggle-label">
+  <i class="fas fa-bars"></i>
+</label>
+<div class="sidebar-header-wrapper">
+  <div class="sidebar">
+    <aside class="aside-wrapper">
+      <div class="search-container">
+          <form class="search-container" action="/action_page.php">
+            <input type="text" class="searchinput" placeholder="Search..." name="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </form>
+      </div>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home" aria-hidden="true"></i><span>Startsida</span></a></li>
+        <li><a class="active" href="bestallning.html"><i class="fas fa-dollar-sign" aria-hidden="true"></i><span>Beställning</span></a></li>
+        <li><a href="bokalokal.html"><i class="fas fa-calendar" aria-hidden="true"></i><span>Boka lokal</span></a></li>
+        <li><a href="blog.html"><i class="fas fa-solid fa-book-open" aria-hidden="true"></i><span>Blog</span></a></li>
+        <li><a href="kontakta.html"><i class="fas fa-phone-square" aria-hidden="true"></i><span>Kontakta</span>></a></li>
+        <li><a href="#"><i class="fas fa-shopping-cart" aria-hidden="true"></i><span>Din varukong</span></a></li>
+      </ul>
+    </aside>
+  </div>
+</div>
+</div>
+<!--sidebar for mobile end-->
+
+<!--navbar for desktop-->  
+	<div class="navbar">
+    <a href="index.html">Startsida</a>
+    <a class="active" href="bestallning.html">Beställning</a>
+    <a href="bokalokal.html">Boka lokal</a>
+    <a href="blog.html">Blog</a>
+    <a href="kontaktaoss">Kontakta oss</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" class="searchinput" placeholder="Search..." name="search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </form>
+      </div>
+  </div>
+
+<!--Breadcrumb-->
+<div class="breadcrumb"> 
+<ul>
+  <li><a href="index.html">Startsida</a></li>
+  <li>Beställning</li>
+</ul>
+</div> 
+<!--Breadcrumb end--> 
+
+<!--head--> 
+<div class="pageheader">
+<h2>Beställning</h2>
+</div>
+
+<!--filter--> 
+<div class="filter">
+    <div class="filter-column">
+    <h3>Typer</h3>
+      <label class="container">vardagsbakverk
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">säsongsbakverk
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">tårtor
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">frukostmeny
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">drick
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">glutenfri
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">vegansk
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+    <br>
+      <h3>Evenemang</h3>
+      <label class="container">födelsedag
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">bröllop
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">babyshower
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">skilsmässa
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+    <br>
+      <h3>Storlek</h3>
+      <label class="container">1-2 personer
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">3-5 personer
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">6-8 personer
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">10-12 personer
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>  
+    </div>
+</div>
+
+
+
+<!--card column-->
+<div class="card-container">
+      <div class="card">
+       <img class="card-img-bottom" src="images/produkter/bread/bread1.png" alt="Mörkt bröd">
+        <h4 class="cardhead"><b>Frukostbröd A</b></h4> 
+        <a href="#" class="button">Köp</a>
+      </div>
+
+     
+      <div class="card"> 
+       <img class="card-img-bottom" src="images/produkter/bread/bread2.png" alt="Ljust bröd med sesamfrön">
+        <h4 class="cardhead"><b>Frukostbröd B</b></h4> 
+        <a href="#" class="button">Köp</a>
+      </div>
+
+     
+      <div class="card"> 
+       <img class="card-img-bottom" src="images/produkter/bread/bread3.png" alt="Vitt bröd med frön">
+        <h4 class="cardhead"><b>Frukostbröd C</b></h4> 
+        <a href="#" class="button">Köp</a>
+      </div>
+
+     
+      <div class="card">
+       <img class="card-img-bottom" src="images/produkter/bread/bread4.png" alt="Vitt bröd">
+        <h4 class="cardhead"><b>Frukostbröd ljus</b></h4> 
+        <a href="#" class="button">Köp</a>
+      </div>
+
+     
+      <div class="card">
+       <img class="card-img-bottom" src="images/produkter/sandwich/sandwich1.png" alt="Tunnbrödsrulle">
+        <h4 class="cardhead"><b>Macka A</b></h4> 
+        <a href="#" class="button">Köp</a>
+      </div>
+
+    
+      <div class="card">
+       <img class="card-img-bottom" src="images/produkter/sandwich/sandwich2.png" alt="Trippelsmörgås med kyckling, bacon och sallad">
+        <h4 class="cardhead"><b>Macka B</b></h4> 
+        <a href="#" class="button">Köp</a>
+      </div>
+
+      
+      <div class="card"> 
+       <img class="card-img-bottom" src="images/produkter/sandwich/sandwich3.png" alt="Äggmacka">
+        <h4 class="cardhead"><b>Macka C</b></h4> 
+        <a href="#" class="button">Köp</a>
+      </div>
+
+      
+      <div class="card">
+       <img class="card-img-bottom" src="images/produkter/sandwich/sandwich4.png" alt="Kycklingburgare med sallad i hamburgerbröd">
+        <h4 class="cardhead"><b>Macka D</b></h4> 
+        <a href="#" class="button">Köp</a>
+      </div>
+
+
+      <div class="card">
+       <img class="card-img-bottom" src="images/produkter/cake/cake1.png" alt="Bärcheesecake">
+        <h4 class="cardhead"><b>Tårta A</b></h4> 
+        <a href="#" class="button">Köp</a>
+      </div>
+
+      
+      <div class="card"> 
+       <img class="card-img-bottom" src="images/produkter/cake/cake2.png" alt="Söt bullekaka toppad med grädde och grapefrukt">
+        <h4 class="cardhead"><b>Tårta B</b></h4> 
+        <a href="#" class="button">Köp</a>
+      </div>
+
+      
+      <div class="card"> 
+       <img class="card-img-bottom" src="images/produkter/cake/cake3.png" alt="Chokladtårta">
+        <h4 class="cardhead"><b>Tårta C</b></h4> 
+        <a href="#" class="button">Köp</a>
+      </div>
+
+      
+      <div class="card">
+       <img class="card-img-bottom" src="images/produkter/cake/cake4.png" alt="Tiramisu">
+        <h4 class="cardhead"><b>Tårta D</b></h4> 
+        <a href="#" class="button">Köp</a>
+      </div>
+</div>
+<!--card column end-->
+
+<!--footer-->
+<footer>
+<div class="container">
+  <div class="row">
+
+    <!--1st column-->
+    <div class="footer-col">
+      <h4>Om oss</h4>
+      <ul>
+        <li><a href="var-historia.html">Vår historia</a></li>
+        <li><a href="#">Jobba hos oss</a></li>
+        <li><a href="kontaktaoss.html">Kontakta oss</a></li>
+      </ul>
+    </div>
+
+    <!--2nd column-->
+    <div class="footer-col">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="villkor.html">Villor</a></li>
+        <li><a href="integritetspolicy.html">Integritetspolicy</a></li>
+      </ul>
+    </div>
+
+  <!--3rd column-->
+    <div class="footer-col">
+      <h4>Kontakta oss</h4>
+      <ul>
+        <li>Hammarby Fabriksväg 65,<br>120 30 Stockholm<br><b>Tel: </b>076 123 4567</li>
+        <li id="sub">Öppettider</li>
+        <li>Måndag-söndag 07.00 - 18.00</li>
+      </ul>
+    </div>
+
+    <!--4th column-->
+    <div class="footer-col">
+      <h4>Prenumerera på vårt nyhetsbrev</h4>
+      <p>Få tips, recept och nyheter direkt i din inkorg</p>
+      <div class="sub-footer">
+        <form action="/action_page.php" method="post">
+        <input type="text" placeholder="Din e-post" name="letter">
+        <input type="submit" value="Prenumerera">
+       </form>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="container-bottom">
+    <p>&copy; Copyright 2025 Söt & Elegant</p>
+</div>
+</footer>
+<!--footer end-->
+
+
+</body>
+</html>

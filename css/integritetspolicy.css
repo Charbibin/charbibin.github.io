@@ -1,0 +1,338 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;}
+
+html {
+  height: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+body {
+width: 100%;
+margin: 0%;
+z-index: 0;
+background-color: #2C3930;
+}
+
+/*#######sidebar for mobile#######*/
+.sidemenu {
+  position: sticky;
+  top: 105px;
+  z-index: 2;
+}
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #f9edf0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: left 0.3s;
+}
+.sidebar-toggle-label i {
+  font-size: 24px;
+    border: #2C3930;
+}
+.sidebar ul li {
+  list-style: none;
+  font-size: 18px;
+  padding: 20px;
+  cursor: pointer;
+} 
+.sidebar li a {
+  color: black;
+  text-decoration: none;
+}
+li span {
+  padding-left: 20px;
+}
+.sidebar ul li .fas {
+  padding-left: 20px;
+}
+.sidebar-toggle-label {
+    position: fixed;
+    top: 10px;
+    background: white;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    z-index: 3;
+    opacity: 0.8;
+}
+#sidebar-toggler:checked ~ .sidebar-header-wrapper .sidebar {
+  left: -100%;
+}
+.sidebar-header-wrapper .search-container {
+    display: inline-block;
+    padding-left: 20px;
+}
+.sidebar-header-wrapper .search-container input[type=text] {
+    padding: 9px;
+    font-size: 16px;
+    border: none;
+    width: 180px;
+    border-radius: 12px;
+}
+.sidebar-header-wrapper .search-container i {
+    position: relative;
+    top: -35px;
+    left: 140px;
+    padding: 8px 8px;
+    background-color: white;
+    pointer-events: none;
+    justify-items: center;
+} 
+/*#######sidebar for mobile end#######*/
+
+
+/*#######header#######*/  
+.header {
+  text-align: center;
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+    background-color: #e6c8b7;
+    color: #261311;
+    letter-spacing: 0.1em;
+    justify-content: center;}
+/*#######header end#######*/
+
+/*#######navbar#######*/  
+.navbar {
+  font-size: 18px;
+    margin: auto;
+    padding: 0;
+	background-color: #DCC2A3;
+    align-content: center;
+    text-align: center;
+    overflow: auto;
+    padding: 20px;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding-inline: 2em;
+  margin: 15px;
+}
+.navbar a:hover {
+  color: white;
+}
+.navbar a.active {
+color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.navbar .search-container {
+  display: inline-block;
+  padding-left: 25px;
+}
+.navbar input[type=text] {
+  padding: 9px;
+  font-size: 16px;
+  border: none;
+  width: 200px;
+}
+.search-container i {
+    position: relative;
+    left: -40px;
+    padding: 8px 8px;
+    background-color: white;
+    pointer-events: none;
+}
+/*#######navbar end#######*/ 
+
+/*#######breadcrumb#######*/ 
+.breadcrumb {
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 40px;
+    list-style: none;
+}
+.breadcrumb ul li {
+    color: white;
+    display: inline;
+    font-size: 16px;
+}
+.breadcrumb ul li+li:before {
+    padding: 8px;
+    color: white;
+    content: "/\00a0";
+}
+.breadcrumb li a {
+    color: white;
+    text-decoration: none;
+}
+.breadcrumb li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+/*#######breadcrumb end#######*/ 
+
+/*#######page header#######*/ 
+.pageheader {
+    padding: 20px;
+    color: #c79b66;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+/*#######page header end#######*/ 
+
+/*#######page content#######*/
+.pagecontent {
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #DCC2A3;
+    color: black;
+    text-align: left;
+    border-radius: 25px;
+}
+
+.pagecontent p {
+    font-size: 16px;
+    text-wrap: pretty;
+    padding-bottom: 15px;
+}
+/*#######page content end#######*/
+
+/*#######footer#######*/
+footer .container {
+    width: 100%;
+    margin: 2% auto;
+    background-color: #e6c8b7;
+    padding: 2%;
+}
+footer .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+}
+.footer-col ul {
+    list-style: none;
+}
+.footer-col h4 {
+    color: black;
+    margin-bottom: 1%;
+    font-size: 20px;
+    text-align: left;
+}
+.footer-col p {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    text-wrap: balance;
+}
+.footer-col ul li {
+    padding-top: 15px;
+    text-align: left;
+}
+.footer-col ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+.footer-col ul li a:hover {
+  color: white;
+}
+.footer-col #sub {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer-col input{
+    border: none;
+    width: 320px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 10px 0;
+    border-radius: 12px;
+}
+.sub-footer input[type="text"] {
+    font-size: 16px;
+}
+.footer-col input[type="submit"] {
+    background-color: #512B29;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+}
+.footer-col input[type=submit]:hover {
+    background-color: #784642;
+}
+.container-bottom {
+    margin: auto;
+    padding-bottom: 2%;
+    text-align: center;
+    color: white;
+    background-color: #2C3930;
+}
+.footer-col .active {
+color: white;
+}
+/*#######footer end#######*/
+
+@media only screen and (min-width: 1300px) {
+.sidemenu {display: none;}
+}    
+
+/*##############Media 350-1300px##############*/
+@media only screen and (min-width: 350px) and (max-width: 1300px) { 
+.navbar {display: none;}
+.breadcrumb {display: none;} 
+
+/*pageheader*/      
+.pageheader {
+    padding: 20px;
+    text-align: center;
+}
+/*pagecontent*/
+.pagecontent {
+    width: 90%;
+    margin: auto;
+}
+
+/*footer*/
+footer {
+    margin-top: 20px;
+}
+footer .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-col h4{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+.footer-col #sub {
+    text-align: center;
+}
+.footer-col p {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    text-wrap: balance;
+}
+.footer-col ul li {
+    text-align: center;
+}
+.footer-col input{
+    margin: 3% auto;
+}
+}
