@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index-style.css">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
   <!--icon link-->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 
   <title>Välkomna till Söt & Elegant</title>
-
 </head>
+
 <body>
 
 <div class="header"><h1>SÖT & ELEGANT</h1></div>
 
+<!--sidebar for mobile-->
 <div class="sidemenu">
 <input type="checkbox" id="sidebar-toggler" style="display:none;">
 <label for="sidebar-toggler" class="sidebar-toggle-label">
@@ -23,13 +24,19 @@
 <div class="sidebar-header-wrapper">
   <div class="sidebar">
     <aside class="aside-wrapper">
+      <div class="search-container">
+          <form class="search-container" action="/action_page.php">
+            <input type="text" class="searchinput" placeholder="Search..." name="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </form>
+      </div>
       <ul>
-        <li><i class="fas fa-home"></i><span>Startsida</span></li>
-        <li><i class="fas fa-birthday-cake"></i><span>Alla produkter</span></li>
-        <li><i class="fas fa-dollar-sign"></i><span>Beställning</span></li>
-        <li><i class="fas fa-calendar"></i><span>Boka lokal</span></li>
-        <li><i class="fas fa-phone-square"></i><span>Kontakta</span></li>
-        <li><i class="fas fa-shopping-cart"></i><span>Din varukong</span></li>
+        <li><a class="active" href="index.html"><i class="fas fa-home" aria-hidden="true"></i><span>Startsida</span></a></li>
+        <li><a href="bestallning.html"><i class="fas fa-dollar-sign" aria-hidden="true"></i><span>Beställning</span></a></li>
+        <li><a href="bokalokal.html"><i class="fas fa-calendar" aria-hidden="true"></i><span>Boka lokal</span></a></li>
+        <li><a href="blog.html"><i class="fas fa-solid fa-book-open" aria-hidden="true"></i><span>Blog</span></a></li>
+        <li><a href="kontakta.html"><i class="fas fa-phone-square" aria-hidden="true"></i><span>Kontakta</span>></a></li>
+        <li><a href="#"><i class="fas fa-shopping-cart" aria-hidden="true"></i><span>Din varukong</span></a></li>
       </ul>
     </aside>
   </div>
@@ -39,79 +46,92 @@
 
 <!--navbar for desktop-->  
 	<div class="navbar">
-    <a class="active" href="#">Startsida</a>
-    <a href="allaprodukter.html">Alla produkter</a>
-    <a href="#">Beställning</a>
-    <a href="#">Boka lokal</a>
-    <a href="#">Kontakta oss</a>
+    <a class="active" href="index.html">Startsida</a>
+    <a href="bestallning.html">Beställning</a>
+    <a href="bokalokal.html">Boka lokal</a>
+    <a href="blog.html">Blog</a>
+    <a href="kontaktaoss.html">Kontakta oss</a>
       <div class="search-container">
         <form action="/action_page.php">
-          <i class="fa fa-search" aria-hidden="true"></i>
           <input type="text" class="searchinput" placeholder="Search..." name="search">
+          <i class="fa fa-search" aria-hidden="true"></i>
         </form>
       </div>
   </div>
+<!--navbar for desktop end-->
 
 
-<!--banner1-->
-<div class="banner1">
+<!--banner-->
   <div class="bannertop">  
        <picture>
           <!--small mobile phone-->
-          <source media="(max-width: 450px)" srcset="images/top-banner/450x300.png">
+          <source media="(max-width: 450px)" srcset="images/index/top-banner/450x300.png">
           <!--IPad mini, IPad air-->
-          <source media="(max-width: 768px)" srcset="images/top-banner/768x300.png">
+          <source media="(max-width: 768px)" srcset="images/index/top-banner/768x300.png">
           <!--other tablet-->
-          <source media="(max-width: 980px)" srcset="images/top-banner/980x300.png">
+          <source media="(max-width: 980px)" srcset="images/index/top-banner/980x300.png">
           <!--small laptop-->
-          <source media="(max-width: 1200px)" srcset="images/top-banner/1200x300.png">
+          <source media="(max-width: 1200px)" srcset="images/index/top-banner/1200x300.png">
           <!--laptop-->
-          <source media="(max-width: 1440px)" srcset="images/top-banner/1440x300.png">
+          <source media="(max-width: 1440px)" srcset="images/index/top-banner/1440x300.png">
           <!--computer, laptop-->
-          <source media="(max-width: 1600px)" srcset="images/top-banner/1600x300.png">
+          <source media="(max-width: 1600px)" srcset="images/index/top-banner/1600x300.png">
           <!--big computer, laptop-->
-          <source media="(min-width: 1920px)" srcset="images/top-banner/2048x300.png">
-          <source media="(max-width: 2304px)" srcset="images/top-banner/2304x300.png">
-          <img src="images/bannerA/2304x300.png" alt="An inmage of colorful macarons">
+          <source media="(min-width: 1920px)" srcset="images/index/top-banner/2048x300.png">
+          <source media="(max-width: 2304px)" srcset="images/index/top-banner/2304x300.png">
+          <img src="images/index/top-banner/2304x300.png" alt="Delikata och färgrika macarons i flera smaker">
       </picture>
-    <div class="tid1" style="color: white;">
     <div class="top-centered">
-      <p><b>Öppettider</b></p><p style="font-size: 18px;">måndag-söndag 07.00-18.00</p></div>
+      <h2>Öppettider</h2><p>måndag-söndag 07.00 - 18.00</p>
     </div>
 
-    <div class="adress1">
     <div class="bottom-centered"><a href="https://maps.app.goo.gl/eRYmkvtq27RuxdGz7">
-      <b>Adress: Hammarby Fabriksväg 65,<br>120 30 Stockholm</b></a></div>
+      <b>Adress: Hammarby Fabriksväg 65,<br>120 30 Stockholm</b></a>
+    </div>
+</div>    
+
+<!--Breadcrumb-->
+<div class="breadcrumb"> 
+<ul>
+  <li><a href="index.html">Startsida</a></li>
+  <li>Startsida</li>
+</ul>
+</div> 
+<!--Breadcrumb end-->  
+
+<!--page header--> 
+<div class="pageheader">
+<h2>Startsida</h2>
 </div>
-</div>
+<!--page header end--> 
 
 <!--card column-->
-
 <div class="card-container">
-      <div class="card"> <!--card1-->
+      <!--card1-->
+      <div class="card"> 
           <h3 class="cardhead"><b>Beställning</b></h3> 
           <p class="cardtext">Kolla in våra bakverk och kakor alltid nybakade och redo 
             att göra din dag lite godare!<br>Beställ enkelt online och hämta upp när det passar dig</p>
-        <img class="card-img-bottom" src="images/cards/onlinebestallning.png" alt="A staff at a café">
-        <a href="#" class="buttonA">Beställa här</a>
+        <img class="card-img-bottom" src="images/index/cards/onlinebestallning.png" alt="Kafépersonal">
+        <a href="bestallning.html" class="button-a">Beställa här</a>
       </div>
 
 
-<!--card2-->
-<div class="card">
-    <h3 class="cardhead"><b>Boka lokal</b></h3> 
-    <p class="cardtext">Vill du ordna en fest, ett företagsmöte eller kanske något mittemellan? <br> Vår cafélokal rymmer upp till 50 personer. Mingel, möte eller möhippa? Vi fixar det!</p>
-  <img class="card-img-bottom" src="images/cards/hyralokal.png" alt="An image of a cafe">
-  <a href="#" class="buttonB">Boka nu</a>
-</div>
+      <!--card2-->
+      <div class="card">
+          <h3 class="cardhead"><b>Boka lokal</b></h3> 
+          <p class="cardtext">Vill du ordna en fest, ett företagsmöte eller kanske något mittemellan? <br> Vår cafélokal rymmer upp till 50 personer. Mingel, möte eller möhippa? Vi fixar det!</p>
+        <img class="card-img-bottom" src="images/index/cards/hyralokal.png" alt="Folk som sitter inne på kaféet">
+        <a href="bokalokal.html" class="button-b">Boka nu</a>
+      </div>
 
-<!--card3-->
-<div class="card">
-    <h3 class="cardhead"><b>Blog</b></h3> 
-    <p class="cardtext">Håll dig uppdaterad med det senaste från vårt café! <br> Här hittar du tips, evenemang och goda tårtrecept som du enkelt kan baka hemma.</p>
-  <img class="card-img-bottom" src="images/cards/blog.png" alt="An image of a bread">
-  <a href="#" class="buttonC">Läs mer</a>
-</div>
+      <!--card3-->
+      <div class="card">
+          <h3 class="cardhead"><b>Blog</b></h3> 
+          <p class="cardtext">Håll dig uppdaterad med det senaste från vårt café! <br> Här hittar du tips, evenemang och goda tårtrecept som du enkelt kan baka hemma.</p>
+        <img class="card-img-bottom" src="images/index/cards/blog.png" alt="En person som bakar en kaka">
+        <a href="blog.html" class="button-c">Läs mer</a>
+      </div>
 </div>
 
 <!--footer-->
@@ -123,9 +143,9 @@
     <div class="footer-col">
       <h4>Om oss</h4>
       <ul>
-        <li><a href="#">Vår historia</a></li>
+        <li><a href="var-historia.html">Vår historia</a></li>
         <li><a href="#">Jobba hos oss</a></li>
-        <li><a href="#">Kontakta oss</a></li>
+        <li><a href="kontaktaoss.html">Kontakta oss</a></li>
       </ul>
     </div>
 
@@ -133,8 +153,8 @@
     <div class="footer-col">
       <h4>Information</h4>
       <ul>
-        <li><a href="#">Villor</a></li>
-        <li><a href="#">Integritetspolicy</a></li>
+        <li><a href="villkor.html">Villor</a></li>
+        <li><a href="integritetspolicy.html">Integritetspolicy</a></li>
       </ul>
     </div>
 
@@ -142,9 +162,9 @@
     <div class="footer-col">
       <h4>Kontakta oss</h4>
       <ul>
-        <li>Hammarby Fabriksväg 65,<br>120 30 Stockholm<br><b>Tel:</b> 000 000 0000</li>
-      <h4 class="sub-h4">Öppettider</h4>
-        <li>Måndag-söndag 07.00-18.00</li>
+        <li>Hammarby Fabriksväg 65,<br>120 30 Stockholm<br><b>Tel: </b>076 123 4567</li>
+        <li id="sub">Öppettider</li>
+        <li>Måndag-söndag 07.00 - 18.00</li>
       </ul>
     </div>
 
@@ -153,20 +173,20 @@
       <h4>Prenumerera på vårt nyhetsbrev</h4>
       <p>Få tips, recept och nyheter direkt i din inkorg</p>
       <div class="sub-footer">
-        <form action="">
+        <form action="/action_page.php" method="post">
         <input type="text" placeholder="Din e-post" name="letter">
         <input type="submit" value="Prenumerera">
        </form>
       </div>
     </div>
+  </div>
+</div>
 
+<div class="container-bottom">
+    <p>&copy; Copyright 2025 Söt & Elegant</p>
 </div>
-</div>
-    <div class="row">
-      <div class="ctext">
-      <p>&copy; Copyright 2025 Söt & Elegant</p>
-    </div>
 </footer>
+<!--footer end-->
 
 
 </body>
